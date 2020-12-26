@@ -1,0 +1,17 @@
+package cn.nnn.cc;
+
+public class Text2 {
+	public static void main(String[] args) {
+		Peroo d1 = new Peroo(10);
+		Peroo d2 = new Peroo(20);
+		System.out.println(d1.a);
+	}
+
+}
+class Peroo{
+	int a ;
+	public Peroo(int o) {
+		this.a = 0 ;
+	}
+	
+}

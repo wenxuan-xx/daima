@@ -1,0 +1,40 @@
+package cn.nnn.cc;
+
+public class Test {
+	public static void main(String[] args) {
+		Fu cgb = new Cgb();
+		Fu scala = new Scala();
+		cgb.jiangke();
+		cgb.beike();
+		scala.jiangke();
+		scala.beike();
+	}
+}
+
+interface Fu{ //TODO 创建接口
+ 	public void jiangke();//TODO 方法1 : 讲课
+	public void beike();//TODO 方法2 : 备课
+}
+
+class Cgb implements Fu{//TODO Cgb实现
+	@Override
+	public void jiangke() {
+		System.out.println("cgb老师 : 边讲课,边嚼槟榔");
+	}
+
+	@Override
+	public void beike() {
+		System.out.println("cgb老师 : 边备课,边干饭");
+	}
+}
+class Scala implements Fu{//TODO Scala实现
+	@Override
+	public void jiangke() {
+		System.out.println("scala老师 : 边讲课,边抽烟");
+	}
+
+	@Override
+	public void beike() {
+		System.out.println("scala老师 : 边备课,边蹲坑");
+	}
+}

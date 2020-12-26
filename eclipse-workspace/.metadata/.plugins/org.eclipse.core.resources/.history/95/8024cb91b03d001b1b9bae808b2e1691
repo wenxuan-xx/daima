@@ -1,0 +1,29 @@
+package cn.java;
+
+public class Test11 {
+	public static void main(String[] args) {
+		
+	}
+
+}
+interface a{
+	void add();
+	void b();
+}
+class b extends Object implements a{
+	super();//ÕÒµÄObject
+	
+	
+	@Override
+	public void add() {
+		
+		
+	}
+
+	@Override
+	public void b() {
+		
+		
+	}
+	
+}

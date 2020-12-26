@@ -1,0 +1,22 @@
+package cn.java;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public class Test10 extends InputStream {
+
+	@Override
+	public int read() throws IOException {
+		return 0 ;
+			
+		
+	}
+}
+public class Test9{
+	public static void main(String[] args) {
+		throws IOException {
+		InputStream a = new Test10();
+		a.read();
+		}
+	}
+}

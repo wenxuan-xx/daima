@@ -1,0 +1,29 @@
+package cn.nnn.cc;
+
+public class Test {
+	public static void main(String[] args) {
+	
+		new Person3("ya",10);
+		Person3 x = new Person3();
+		x.putong();
+		new Person3();
+	}
+
+}
+class Person3{
+	String name;
+	int b;
+	public Person3() {
+		name = "luo";
+		b = 15 ;
+		System.out.println(name+b);
+	}
+	public Person3(String a , int b) {
+		name = a ;
+		this.b = b ;
+		System.out.println(a+b);
+	}
+	public void putong() {
+		System.out.println("putong");
+	}
+}

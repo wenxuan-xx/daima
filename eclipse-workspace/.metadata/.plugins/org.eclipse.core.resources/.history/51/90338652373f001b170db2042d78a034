@@ -1,0 +1,36 @@
+package cn.tedu.ppp;
+// 测试  继承
+public class Tese_Extends {
+	public static void main(String[] args) {
+		String t = new String(); 
+		// 创建子类的测试对象
+		//new Son().eat();// 使用了父类的功能
+		//new Son().sleep();// 调用了Granfather的功能
+		//new Father().sleep();// 父类使用了Granfather的功能
+		Grandfather a = new Father();
+		a.sleep();
+		System.out.println(a.name);
+	}
+}
+
+// 定义一个父类
+class Grandfather{
+	String name = "xiao";
+	public void sleep() {
+		System.out.println("睡");
+	}
+}
+class Father extends Grandfather{
+	
+	public void eat() {
+		System.out.println("吃");
+	}
+	public void sleep() {
+		System.out.println("打球");// 私有功能不能被子类继承
+	}
+}
+// 定义一个子类
+class Son extends Father{
+	String name = "hong";
+	// 子类可以使用父类的所以功能
+}
